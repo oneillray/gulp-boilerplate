@@ -2,6 +2,8 @@
 
 $blue-bg: #247b56;
 
+$blue-2: #2481B7;
+
 body, html {
 
 	font: 16px "helvetica" sans-serif 100;
@@ -23,18 +25,19 @@ aside {
 
 #main, aside {
 
-	padding: 1% 2%;
+//	padding: 1% 2%;
 
 }
 
+
+a {text-decoration: none}
 
 .test-gulp {
 
 	color: #fff;
 	background: $blue-bg;
-	font-size: 1em;
+	font: 1em;
 	padding: percentage(1/18);
-	//opacity: 0.5;
 	transition: 0.8s ease-in background;
 
 	&:hover {
@@ -44,3 +47,37 @@ aside {
 	}
 
 }
+
+	.promo {
+		height: 280px;
+		width: 100%;
+		border: 1px solid #e7eef4;
+		text-align: center;
+		font: {
+			family: 'helvetica';
+			style: normal;		
+			weight: 900;	
+		}
+		line-height: 1;
+		padding: 0 2%;
+		background: {
+			color: lighten($blue-2, 50%);
+			image: url(../images/test.png);
+			repeat: no-repeat;
+			position: center;
+		}
+
+		h3 {font-size: 150%; color: $blue-2;}
+		p { color: lighten($blue-2, 20%);}
+	}
+
+	.promo--cta { 
+		
+		display: inline-block;
+		background: $blue-2;
+		color: #fff;
+		padding: 2% 4%;
+		margin-top: 2%;
+		border-radius: 2px;
+	}
+
