@@ -1,0 +1,35 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 5px/70px
+);
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+	@include nested(12){
+
+	#main {
+
+		@include span(8);
+	}
+
+	aside {
+
+		@include span(4);
+	}
+
+
+}

@@ -1,0 +1,46 @@
+ //@import "grids";
+
+$blue-bg: #247b56;
+
+body, html {
+
+	font: 16px "helvetica" sans-serif 100;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+section#main {
+
+	background: darken(#f0f0f0, 10%);
+
+}
+
+aside {
+
+	background: saturate($blue-bg, 35%);
+}
+
+#main, aside {
+
+	padding: 1% 2%;
+
+}
+
+
+.test-gulp {
+
+	color: #fff;
+	background: $blue-bg;
+	font-size: 1em;
+	padding: percentage(1/18);
+	//opacity: 0.5;
+	transition: 0.8s ease-in background;
+
+	&:hover {
+
+	background: saturate($blue-bg, 25%);
+
+	}
+
+}
